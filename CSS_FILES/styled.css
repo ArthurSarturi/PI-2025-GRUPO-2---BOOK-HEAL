@@ -5,7 +5,7 @@ body {
 
 .banner {
 
-    background-color: rgb(49, 49, 49);
+    background-image: url("images/imagem.png");
 
     display: flex;
     flex-direction: row;
