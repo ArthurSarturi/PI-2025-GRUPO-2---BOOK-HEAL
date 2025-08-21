@@ -186,3 +186,80 @@ footer {
     margin: 6px;
     margin-left: 30px;
 }
+
+.mainContainer{
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+    font-family: system-ui;
+    font-size: 16px;
+    background-color: rgb(53, 46, 39);
+    color: beige;
+
+    padding-bottom: 30px;
+    
+}
+
+.mainContainer .inputField form {
+
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.destaques 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.destaques div{
+
+    display: flex;
+    justify-content: center;
+
+    background-color:rgb(62, 112, 110);
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+}
+
+.destaques div h2 {
+    text-align: center;
+    background-color: rgb(35, 70, 67);
+
+    font-size: 30px;
+    margin-top: 80%;
+
+    width: 200px;
+    height: 40px;
+}
+
+.bookField {
+    height: 20px;
+    width: 800px;
+}
+
+.NameField {
+    height: 20px;
+    width: 800px;
+}
+
+.ContentField {    
+    height: 400px;
+    width: 800px;
+}
+
+.mainContainer .inputField input {
+    background-color: rgb(48, 48, 48);
+}

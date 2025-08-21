@@ -1,28 +1,15 @@
 <!DOCTYPE html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="icon" href="images/logobookhealsemfundo.png">
 </head>
 <body>
     <div class="loginbox">
         <h1>Login</h1>
         <form>
-            <div class="inp">
-                <p>Nome do usuário</p>
-                <input type="text" placeholder="...">
-                <p>Nome de exibição</p>
-                <input type="text" placeholder="...">
-                <p>E-Mail</p>
-                <input type="email" placeholder="...">
-                <p>Senha</p>
-                <input type="password" placeholder="...">
-                <p>Confirme a senha</p>
-                <input type="password" placeholder="...">
-            </div>
-            <div class="button-container">
-                <button type="button">Enviar</button>
-            </div>
+            <label>Nome do usuário</label>
+            <input type="text">
         </form>
     </div>
 </body>

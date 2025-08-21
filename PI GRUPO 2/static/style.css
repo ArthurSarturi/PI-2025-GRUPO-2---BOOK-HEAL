@@ -1,45 +1,4 @@
 body{
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(49, 49, 49);
     color: rgb(255, 255, 255);
-    margin: 25px;
-}
-
-.loginbox{
-    background-color: rgba(102,135,134,255);
-    margin-right: 70%;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-bottom: auto;
-}
-
-input{
-    background-color: rgba(40,41,40,255);    
-    border: solid rgb(43, 43, 43);
-    border-radius: 5px;
-    width: auto;
-    height: 22px;
-    color: aliceblue;
-}
-
-.inp{
-    display: flex;
-    flex-direction: column;
-}
-
-h1{
-    font-size: 45px;
-}
-
-button{
-    margin: 30px;
-    background-color: rgba(29,49,49,255);
-    color: aliceblue;
-    border: solid rgba(29,49,49,255);
-    border-radius: 2px;
-    width: 300px;
-    font-size: larger;
-}
-
-.button-container{
-    text-align: center;
 }
