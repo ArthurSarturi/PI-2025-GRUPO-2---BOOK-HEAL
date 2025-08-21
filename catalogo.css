@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2a2a2a;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.header {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23f0f0f0"/><text x="50" y="50" text-anchor="middle" dy=".3em" font-size="8" fill="%23666">📚</text></svg>');
+    background-size: cover;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 100px;
+    width: auto;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.8));
+}
+
+.subtitle {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.nav {
+    background-color: rgba(14, 80, 17, 0.7);
+    padding: 15px 0;
+    width: 100%;
+    position: relative;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.nav li {
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+.nav li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 20px;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+    width: 100%;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+.main-content {
+    padding: 40px;
+}
+
+.catalog-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.book-card {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-cover {
+    width: 200px;
+    height: 280px;
+    margin: 0 auto 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.book-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.book-author {
+    font-size: 12px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.stars {
+    margin-bottom: 15px;
+}
+
+.star {
+    color: #ddd;
+    font-size: 18px;
+}
+
+.add-button {
+    background-color: #20b2aa;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #1a8f8a;
+}
+
+.footer {
+    background-color: #053229;
+    padding: 30px 40px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.instituto-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.contact-info {
+    color: white;
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.email-list {
+    list-style: none;
+}
+
+.email-list li {
+    margin-bottom: 3px;
+    font-size: 14px;
+}
