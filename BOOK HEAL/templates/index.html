@@ -8,44 +8,75 @@
     </head>
 
     <body>
-        <div class="container">
+        <header>
+            <div class="nav-bar">
+                <a href="">HOME</a> </li>
+                <a href=""> <strong>FÓRUM</strong></a></li>
+                <a href="">SOBRE NÓS</a></li>
+            </div>
+        </header>
 
-            <div class="form-section">
-                <h1>Escreva seu Post</h1>
-                <div class="form-container">
-                    <form action="/Posts/create" method="POST">
-                        <div class="form-group">
-                            <label for="title">Título</label>
-                            <input type="text" id="title" name="title" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="userName">Seu Nome</label>
-                            <input type="text" id="userName" name="userName" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="bookId">Livro (opcional)</label>
-                            <input type="text" id="bookId" name="bookId">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="content">Conteúdo</label>
-                            <textarea id="content" name="content" rows="4" required></textarea>
-                        </div>
-
-                        <button type="submit">Criar Post</button>
-                    </form>
-                </div>
+        <div class="main-container">                    
+            <div class="banner">
+                <p></p>
+                <img style="position: fixed;" src="{{ url_for('static', filename='images/logo.png') }}" width="400px" height="320px" alt="legal">
             </div>
 
-             <div class="posts-section">
-                <h1>Posts</h1>
-                <div id="posts-container">
+            <div>
+                <div class="out-text">
+                    <h1> Escreva sua resenha </h1>
                 </div>
+
+                <div class="container">
+
+                    <div class="form-section">
+                        <div class="form-container">
+                            <form action="/Posts/create" method="POST">
+                                <div>
+                                    <div class="form-group">
+                                        <label for="title">Título</label>
+                                        <input type="text" id="title" name="title" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="userName">Seu Nome</label>
+                                        <input type="text" id="userName" name="userName" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="bookId">Livro (opcional)</label>
+                                        <input type="text" id="bookId" name="bookId">
+                                    </div>
+                                </div>
+                                <div>    
+                                    <div class="form-group">
+                                        <label for="content">Conteúdo</label>
+                                        <textarea id="content" name="content" rows="4" required></textarea>
+                                    </div>
+                                </div>
+                                
+                                <button type="submit">Criar Post</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            
+            <div class="out-text">
+                <h1> Resenhas </h1>
             </div>
             
+            <div class="container">
+                <div class="posts-section">
+                    <div id="posts-container">
+                    </div>
+                </div>
+            </div>
         </div>
+     
+    </div>
+                    
 
         <script>
             // Função para carregar e exibir posts

@@ -3,17 +3,70 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #333;
+    background-color: #313131;
     color: #e9e9e9;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #123f3f;;
+    padding: 10px;
+}
+
+.nav-bar a {
+    text-align: center;
+    background-color: #1d6861;
+    width:33.1%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 30px;
+
+    border-radius: 4px;
+
+    text-decoration: none;
+    color: #e9e9e9;
+
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
-    background-color: rgb(34, 34, 34);
+    border: 10px solid #123f3f;
+    background-color: #1d6861;  
+
+
     padding: 20px;
     border-radius: 5px;
+    
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 100px;
+    
+}
+
+.banner {
+    width: 400px;
+    margin: 0 auto;
+    border: 10px solid #123f3f;
+    background-color: #222222;  
+
+    padding: 20px;
+    border-radius: 5px;
+    
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-right: 20px;
+    
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
 }
 
 h1 {
@@ -31,7 +84,7 @@ h1 {
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 3px;
-    background-color: #1a1a1a;
+    background-color: #222222;
 }
 
 .post h3 {
@@ -45,14 +98,20 @@ h1 {
 }
 
 .form-section {
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
+    
+}
+
+.out-text {
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 800px;
 }
 
 .form-container {
-    background-color: #1a1a1a;
+    background-color: #222222;
     padding: 20px;
     border-radius: 3px;
+
 }
 
 .form-group {
@@ -80,7 +139,7 @@ input, textarea {
 
 input:focus, textarea:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #00414d;
 }
 
 textarea {
