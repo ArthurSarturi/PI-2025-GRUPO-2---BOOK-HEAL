@@ -68,6 +68,7 @@ body {
     
 }
 
+
 .hero-container {
     display: flex;
     justify-content: center;
@@ -239,4 +240,117 @@ button:hover {
     border-radius: 3px;
     border: 1px solid #f5c6cb;
     margin: 10px 0;
+}
+.bannerhome{
+     width: 400px;
+    height: 700px;
+    margin: 0 auto;
+    background-size: cover;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 20px;
+
+
+}
+.Principal{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: #222222;
+  padding: 20px 40px;
+
+  background: url("images/Bigshelf2.png") no-repeat center/cover;
+  background-size: cover;
+
+  position: relative;
+}
+
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+.logohome{
+    position: relative;
+    align-items: center;
+    align-content: center;
+    margin-left: 100px;
+}
+.destaques {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+    margin: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  width: 500px;
+  height: 400px;
+  text-align: center;
+  color: black;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+.info {
+  text-align: center;
+  background: url('https://via.placeholder.com/1200x300?text=Natureza') no-repeat center/cover;
+  color: white;
+  padding: 60px 20px;
+}
+
+.info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.info button {
+  padding: 12px 24px;
+  border: none;
+  background: #7ed957;
+  color: black;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.info button:hover {
+  background: #5ab844;
+}
+.footerhome {
+  background: #013220;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin: 0px;
 }

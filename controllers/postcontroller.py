@@ -28,7 +28,7 @@ def createPostForm():
 
     db.session.add(newPost)
     db.session.commit()
-    return flask.redirect('/')
+    return flask.redirect('/forum')
 
 def viewAllPosts():
     data = PostModel.query.all()
