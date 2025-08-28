@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <link rel="stylesheet" href="/static/styles.css">
-        <link rel="icon" href="/static/images/logoicon.png">
     </head>
     <body>
         <header>
@@ -22,14 +21,21 @@
                 <img src="{{ url_for('static', filename='images/logo.png') }}" width="450px"height="350px"alt="logo">
             </div>
             <div class="destaques">
+                <h1>Destaques</h1>
             <div class="cards">
                 <div class="card">
-                <h3>Resenha</h3>
-                <img src="https://via.placeholder.com/250x150?text=Resenha" alt="Resenha">
-                </div>
-                <div class="card">
-                <h3>Leitura</h3>
-                <img src="https://via.placeholder.com/250x150?text=Saúde+Mental" alt="Saúde Mental">
+                <h3>Resenha Destaque</h3>
+                <p>Em "A Biblioteca da Meia-Noite", Matt Haig nos apresenta a Nora Seed, uma mulher cheia de arrependimentos e que acredita ter falhado em todos os aspectos 
+                    da vida. No auge de seu desespero, ela se vê numa misteriosa biblioteca entre a vida e a morte.
+                    O grande trunfo do livro é sua premissa fascinante: cada livro nessa biblioteca oferece a chance de viver uma das outras vidas que poderia ter tido se 
+                    tivesse feito escolhas diferentes. Nora embarca numa jornada para explorar essas realidades alternativas, desde ser uma estrela do rock até uma glacióloga
+                    na Antártida. Mais do que uma fantasia, a narrativa é uma profunda e terna reflexão sobre arrependimento, propósito e as infinitas possibilidades da existência. 
+                </p>
+                    <div class="botfor">
+                        <form action="{{ url_for('forum') }}" method="get">
+                            <button type="submit">Escreva a sua também!</button>
+                        </form>
+                    </div>
                 </div>
             </div>
             </div>
@@ -40,7 +46,7 @@
                     <button type="submit">Saiba Mais</button>
                 </form>
         </section>
-        <div>
+        <div class="footerhome">
             <footer>
                 <img src="{{ url_for('static', filename='images/logo-ifc.png' )}}" width="200px" height="200px" alt="legal">
                 <div> 
