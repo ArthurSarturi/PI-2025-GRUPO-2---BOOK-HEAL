@@ -289,6 +289,8 @@ button:hover {
 }
 .destaques {
   display: flex;
+  flex-direction: row;
+  justify-content: start;
   position: relative;
   z-index: 1;
 }
@@ -299,15 +301,17 @@ button:hover {
 }
 
 .card {
-    margin: 10px;
-  background: white;
+  margin: 0px;
+  background: rgb(49, 49, 49);
   padding: 10px;
-  border-radius: 10px;
+  padding-left: 200px;
+  padding-right: 200px;
+  border-radius: 5px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   width: 500px;
   height: 400px;
   text-align: center;
-  color: black;
+  color: rgb(228, 225, 225);
 }
 
 .card h3 {
@@ -345,7 +349,8 @@ button:hover {
   background: #5ab844;
 }
 .footerhome {
-  background: #013220;
+  background-color: #123f3f;;
+
   color: white;
   text-align: center;
   padding: 20px;
