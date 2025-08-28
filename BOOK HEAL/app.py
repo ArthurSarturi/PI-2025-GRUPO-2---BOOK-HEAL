@@ -21,5 +21,10 @@ with app.app_context():
 def index():
     return render_template('index.html')
 
+@app.route('/forum')
+def forum():
+    return render_template('forum.html')
+
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000, debug=True)
