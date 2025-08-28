@@ -10,114 +10,39 @@
     <body>
         <header>
             <div class="nav-bar">
-                <a href="">HOME</a> </li>
-                <a href=""> <strong>FÓRUM</strong></a></li>
-                <a href="">SOBRE NÓS</a></li>
+                <a href="{{ url_for('home') }}">HOME</a>
+                <a href="{{ url_for('forum') }}">FÓRUM</a>
+                <a href="{{ url_for('about') }}">SOBRE NÓS</a>
             </div>
         </header>
 
-        <div class="main-container">                    
-            <div class="banner">
-                <p></p>
-                <img style="position: fixed;" src="{{ url_for('static', filename='images/logo.png') }}" width="400px" height="320px" alt="legal">
-            </div>
-
-            <div>
-                <div class="out-text">
-                    <h1> Escreva sua resenha </h1>
-                </div>
-
-                <div class="container">
-
-                    <div class="form-section">
-                        <div class="form-container">
-                            <form action="/Posts/create" method="POST">
-                                <div>
-                                    <div class="form-group">
-                                        <label for="title">Título</label>
-                                        <input type="text" id="title" name="title" required>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <label for="userName">Seu Nome</label>
-                                        <input type="text" id="userName" name="userName" required>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <label for="bookId">Livro (opcional)</label>
-                                        <input type="text" id="bookId" name="bookId">
-                                    </div>
-                                </div>
-                                <div>    
-                                    <div class="form-group">
-                                        <label for="content">Conteúdo</label>
-                                        <textarea id="content" name="content" rows="4" required></textarea>
-                                    </div>
-                                </div>
-                                
-                                <button type="submit">Criar Post</button>
-                            </form>
-                        </div>
-                    </div>
-
-                </div>
-
-            
-            <div class="out-text">
-                <h1> Resenhas </h1>
-            </div>
-            
-            <div class="container">
-                <div class="posts-section">
-                    <div id="posts-container">
-                    </div>
+        <main> 
+            <div class="hero-container">
+                 <img src="{{ url_for('static', filename='images/logo.png') }}" width="500px" height="420px" alt="legal">
+                <div class="hero-container-text">
+                    <h1> Saúde e literatura </h1>
+                    <h3> forum sobre sobre Livros e Saúde</h3>
                 </div>
             </div>
-        </div>
-     
-    </div>
-                    
 
-        <script>
-            // Função para carregar e exibir posts
-            function loadPosts() {
-                fetch('/Posts/view')
-                    .then(response => response.json())
-                    .then(posts => {
-                        const container = document.getElementById('posts-container');
-                        container.innerHTML = '';
-                        
-                        if (posts.length === 0) {
-                            container.innerHTML = '<div class="loading">Nenhum post encontrado. Seja o primeiro a criar um!</div>';
-                            return;
-                        }
-                        
-                        posts.forEach(post => {
-                            const postDiv = document.createElement('div');
-                            postDiv.className = 'post';
-                            postDiv.innerHTML = `
-                                <h3>${post.title}</h3>
-                                <p><strong>Por:</strong> ${post.userName}</p>
-                                <p><strong>Conteúdo:</strong> ${post.content}</p>
-                                ${post.bookId ? `<p><strong>Livro ID:</strong> ${post.bookId}</p>` : ''}
-                            `;
-                            container.appendChild(postDiv);
-                        });
-                    })
-                    .catch(error => {
-                        console.error('Erro ao carregar posts:', error);
-                        const container = document.getElementById('posts-container');
-                        container.innerHTML = '<div class="error">Erro ao carregar posts. Tente novamente mais tarde.</div>';
-                    });
-            }
+            <div class="hero-main-container">
+                <h1>Um pouco sobre nós</h1>
+                    <h3>Descubra livros que falam à alma, explore histórias que acolhem emoções e participe de um espaço seguro para refletir, 
+                    compartilhar e resenhar obras que tocam o coração e a mente. Aqui, leitura é cuidado e cada resenha,
+                     um diálogo aberto sobre bem-estar e empatia.</h3>
+            </div>
 
-            // Carregar posts quando a página carregar
-            window.onload = loadPosts;
+        </main>
 
-            // Recarregar posts após criar um novo post
-            document.querySelector('form').addEventListener('submit', function() {
-                setTimeout(loadPosts, 1000); // Recarrega após 1 segundo
-            });
-        </script>
+        <footer> 
+             <img src="{{ url_for('static', filename='images/logo-ifc.png' )}}" width="200px" height="200px" alt="legal">
+                <div> 
+                    <p> CONTATO: maranhaocaua@gmail.com | zacaipa8@gmail.com | guizuttigzc@gmail.com |
+                    gustavokellifc@gmail.com | laraappel@gmail.com | seyycookie@gmail.com</p>
+                    <P>ENDEREÇO: SC-283, s/n - Fragosos, Concórdia - SC, 89703-720
+                </P>
+            </div>
+        </footer>
+
     </body>
 </html>
